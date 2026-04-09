@@ -37,9 +37,9 @@ Além disso, a página é:
 
 ## 🚀 Tecnologias Utilizadas
 
-HTML5 🟧
-CSS3 🟦
-JavaScript 🟨
+- HTML5 🟧
+- CSS3 🟦
+- JavaScript 🟨
 
 ## 💡 Considerações
 
@@ -48,4 +48,5 @@ Este projeto demonstra a importância de uma landing page bem estruturada para e
 ## 🖇️Links
 
 Repositório: https://github.com/DevLuan1345/Construction
+
 Deploy do Projeto: https://devluan1345.github.io/Construction/
