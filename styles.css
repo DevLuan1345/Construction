@@ -1,0 +1,331 @@
+:root {
+    --verde-escuro: #1b4d3e;
+    --amarelo: #ffcc00;
+    --verde-hover: #2e8b57;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: red;
+    color: #333;
+}
+
+header {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1:hover {
+    color: #ffcc00;
+}
+
+.logo-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.banner {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 50px 20px;
+    color: red;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    color: black;
+}
+
+.section h2 {
+    color: #ffcc00;
+}
+
+.section p {
+    color: #fff;
+}
+
+.section p:hover {
+    color: #ffcc00;
+}
+
+.sobre-img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #333;
+    border: 2px solid var(--amarelo);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #ffcc00;
+}
+
+.card p:hover {
+    color: #fff;
+}
+
+.card:hover {
+    background-color: #333;
+    transform: translateY(-5px);
+}
+
+.depoimentos {
+    background: red;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.depoimento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #333;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(251, 255, 0);
+    max-width: 700px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.depoimento:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgb(251, 255, 0);
+}
+
+.depoimento:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 10px rgba(251, 255, 0);
+}
+
+.depoimento img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.depoimento blockquote {
+    font-style: italic;
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cliente-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--verde-escuro);
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #ffcc00;
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+#btn-whatsapp {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#btn-whatsapp:hover {
+    background-color: #1ebe5b;
+}
+
+/* ===== Responsividade ===== */
+
+/* Tablets e dispositivos médios */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .logo-img {
+        width: 150px;
+    }
+
+    .card-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 45%; /* Duas colunas */
+        padding: 15px;
+    }
+
+    .sobre-img {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .logo-img {
+        width: 120px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .card {
+        width: 90%; /* Uma coluna */
+        padding: 10px;
+    }
+
+    .sobre-img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .depoimento {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .depoimento img {
+        margin-bottom: 10px;
+    }
+
+    .depoimento blockquote {
+        font-size: 0.9rem;
+    }
+
+    .address {
+        font-size: 0.9rem;
+    }
+}
